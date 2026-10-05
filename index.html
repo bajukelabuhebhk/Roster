@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Roster HEBHK</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#0f766e"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Roster HEBHK"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" href="icon-192.png">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);--bg:#f6f7f9;--c:#fff;--t:#111827;--m:#6b7280;--b:#e5e7eb;--p:#0f766e;--g:#10b981;--r:#dc2626;--we:#e5e7eb}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1419;--c:#1a2129;--t:#e5e7eb;--m:#9ca3af;--b:#2d3742;--p:#2dd4bf;--we:#2a323b}}
+:root[data-theme=dark]{--bg:#0f1419;--c:#1a2129;--t:#e5e7eb;--m:#9ca3af;--b:#2d3742;--p:#2dd4bf;--we:#2a323b}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--t);font:15px system-ui,sans-serif;padding-bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+header{display:flex;gap:8px;align-items:center;padding:10px 12px;background:var(--c);border-bottom:1px solid var(--b);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header b{flex:1}select,button,input{font:inherit;color:var(--t);background:var(--c);border:1px solid var(--b);border-radius:8px;padding:7px 10px}
+button{cursor:pointer}button.p{background:var(--p);color:#fff;border-color:var(--p)}button.d{color:var(--r)}
+main{padding:12px;max-width:1100px;margin:auto}.card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:12px;margin:8px 0}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--c);border-top:1px solid var(--b);padding-bottom:env(safe-area-inset-bottom,0px);z-index:6}
+nav button{flex:1;border:0;border-radius:0;padding:14px 4px}nav button.on{color:var(--p);font-weight:700}
+.seg{display:flex;gap:6px;margin-bottom:8px}.seg button{flex:1}.seg .on{background:var(--p);color:#fff}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}.cal .h{color:var(--m);font-size:12px}
+.cal button{padding:8px 0;position:relative;min-height:42px}.cal .sel{outline:2px solid var(--p)}.cal .we{background:var(--we)}
+.dot{position:absolute;bottom:3px;left:50%;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--g)}
+.lv{background:#fde68a;color:#78350f}.mn{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.leg{font-size:12px;color:var(--m);margin-top:6px}.leg i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--g)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #000;padding:3px 4px;vertical-align:top;text-align:center}
+th{background:var(--c);font-weight:700}th small{font-weight:400;display:block;text-align:left;font-size:10px}tr.we td{background:var(--we)}
+.hl{background:#d1fae5;color:#065f46;border-radius:10px;padding:0 6px;font-weight:700}.n{display:block}.chg s{color:var(--r)}.chg{background:#fef3c7;color:#78350f}
+#m{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;z-index:20;padding:16px}#m>div{background:var(--c);border-radius:14px;padding:16px;width:100%;max-width:420px;max-height:85vh;overflow:auto}
+#m button,#m select{width:100%;margin:4px 0}.tag{font-size:12px;color:var(--m)}.row{display:flex;justify-content:space-between;gap:8px;align-items:center}
+#pa{display:none}
+@media print{@page{size:A4 portrait;margin:6mm 8mm}body>*:not(#pa){display:none!important}body{background:#fff;color:#000;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}#pa{display:block!important;color:#000}
+#pa table{border-collapse:collapse;font-size:7.2pt;width:100%}#pa th,#pa td{border:1px solid #000!important;padding:2px 3px;color:#000;background:none}#pa tr.we td{background:#e5e7eb!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+#pa .hl,#pa .chg{background:none;color:#000;padding:0;font-weight:400}.sig{display:flex;justify-content:space-between;margin-top:20px;font-size:8pt}.sig div{width:45%}.sig hr{border:0;border-top:1px solid #000;margin:28px 0 4px}}
+</style><style>main{padding:16px}.card{margin:12px 0;padding:14px}.seg button{padding:10px 6px}.cal{gap:4px}nav button{font-size:13px;padding:12px 2px}.dr{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-top:1px solid var(--b);margin-top:6px}.dr span:last-child{text-align:right}tr.we td{font-weight:700}
+@media print{#pa table{font-size:7.5pt}#pa th,#pa td{padding:3.3px 4px!important;text-align:left}#pa td:first-child,#pa th{text-align:center}#pa th{font-size:8pt}#pa th small{text-align:center;font-size:6.6pt;font-weight:400}#pa .n{display:inline}#pa .n+.n:before{content:"/"}#pa tr.we td{font-weight:700}#pa .leg{font-size:8pt;margin-top:10px;line-height:1.5}}@media print{#pa table{table-layout:fixed}#pa tr:first-child th:nth-child(1){width:4%}#pa tr:first-child th:nth-child(2){width:7%}#pa tr:first-child th:nth-child(3){width:13%}#pa tr:first-child th:nth-child(4){width:17%}#pa tr:first-child th:nth-child(5){width:17%}#pa tr:first-child th:nth-child(6){width:19%}#pa tr:first-child th:nth-child(7){width:14%}#pa tr:first-child th:nth-child(8){width:9%}}</style></head><body>
+<header><b id="ttl">Roster Farmasi</b><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="pa"></div>
+<script>
+const PIN='1992',ADM=['Hasidah','Afiq'],MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
+const cnt=(s,k)=>isOff(k)?({b:2,c:2,e:2}[s]||1):1,SN={a:'FPL (1)',b:'FPD',c:'FPL',d:'A & E',e:'FP / TPN',f:'Pasif Call'};
+let S=null,U='Zuraida',tab='roster',view='cal',Y=2026,M=9,sel=null,audit=false,unlocked=false;
+const def=()=>({staff:['Hasidah','Afiq','Zuraida','Syafiq','Afni','Mazwan','Asfawi','Asma','Mumtazah','Norlina','Azlina','Fauziah','Maisarah','Khairul','Fahmi','Ardiana','Zaharin','Salasiah'],tpn:['Fahmi','Azlina','Afiq','Mazwan','Fauziah','Syafiq','Afni','Asfawi','Khairul','Ardiana','Maisarah','Hasidah'],ph:['2026-11-08','2026-11-09','2026-12-25'],sh:{},leave:{},base:{},pub:{},req:[],log:[]});
+const SB='https://llbfbcmcgpnbfycrklmn.supabase.co',KEY='sb_publishable_lq2fhkNf9PHecGhoeNNaLg_Oza2NBZS';
+async function api(p,o={}){const r=await fetch(SB+'/rest/v1/'+p,{...o,headers:{apikey:KEY,'Content-Type':'application/json',...(o.headers||{})}});if(!r.ok)throw new Error(await r.text());const t=await r.text();return t?JSON.parse(t):null}
+async function getAll(t){let o=[],i=0;for(;;){const r=await api(t+`&limit=1000&offset=${i}`);o=o.concat(r);if(r.length<1000)return o;i+=1000}}
+async function load(){const[st,sh,bs,lv,rq,lg,ho]=await Promise.all(['staff?select=*&order=name','shifts?select=*&order=id','baselines?select=*&order=id','leave?select=*&order=id','swap_requests?select=*&order=id','shift_log?select=*&order=id','holidays?select=*&order=day'].map(getAll));
+const N={staff:st.map(x=>x.name),tpn:st.filter(x=>x.tpn).map(x=>x.name),ph:ho.map(x=>x.day),sh:{},leave:{},base:{},pub:{},req:[],log:[]};
+sh.forEach(r=>{((N.sh[r.duty_date]=N.sh[r.duty_date]||{})[r.slot]=N.sh[r.duty_date][r.slot]||[])[r.pos]=r.staff_name});
+bs.forEach(r=>{const m=(N.base[r.month]=N.base[r.month]||{});((m[r.duty_date]=m[r.duty_date]||{})[r.slot]=m[r.duty_date][r.slot]||[])[r.pos]=r.staff_name;N.pub[r.month]=1});
+lv.forEach(r=>{(N.leave[r.staff_name]=N.leave[r.staff_name]||{})[r.leave_date]=r.type});
+N.req=rq.map(r=>({id:r.id,type:r.kind,from:r.from_name,to:r.to_name,date:r.duty_date,slot:r.slot,rdate:r.return_date,rslot:r.return_slot,st:r.status}));
+N.log=lg.map(r=>({id:r.id,date:r.duty_date,slot:r.slot,from:r.from_name,to:r.to_name,type:r.kind}));return N}
+const fS=sh=>{const o={};for(const k in sh)for(const s in sh[k])sh[k][s].forEach((n,i)=>{if(n)o[`${k}|${s}|${i}`]=n});return o};
+const fL=l=>{const o={};for(const n in l)for(const d in l[n])o[`${n}|${d}`]=l[n][d];return o};
+const fB=b=>{const o={};for(const m in b)for(const k in b[m])for(const s in b[m][k])b[m][k][s].forEach((n,i)=>{if(n)o[`${m}|${k}|${s}|${i}`]=n});return o};
+const snp=()=>({sh:fS(S.sh),lv:fL(S.leave),bs:fB(S.base),rq:Object.fromEntries(S.req.filter(r=>r.id).map(r=>[r.id,r.st])),n:S.req.length+'/'+S.log.length});
+const sg=o=>JSON.stringify([Object.entries(o.sh).sort(),Object.entries(o.lv).sort(),Object.entries(o.bs).sort(),Object.entries(o.rq).sort(),o.n]);
+let P=null,busy=false,again=false;
+async function sync(){if(busy){again=true;return}busy=true;try{const C=snp(),up=[],dl=[],lu=[],ld=[],bi=[];
+for(const k in C.sh)if(P.sh[k]!==C.sh[k]){const[d,s,i]=k.split('|');up.push({duty_date:d,slot:s,pos:+i,staff_name:C.sh[k]})}
+for(const k in P.sh)if(!(k in C.sh)){const[d,s,i]=k.split('|');dl.push(`shifts?duty_date=eq.${d}&slot=eq.${s}&pos=eq.${i}`)}
+for(const k in C.lv)if(P.lv[k]!==C.lv[k]){const[n,d]=k.split('|');lu.push({staff_name:n,leave_date:d,type:C.lv[k]})}
+for(const k in P.lv)if(!(k in C.lv)){const[n,d]=k.split('|');ld.push(`leave?staff_name=eq.${encodeURIComponent(n)}&leave_date=eq.${d}`)}
+for(const k in C.bs)if(!(k in P.bs)){const[m,d,s,i]=k.split('|');bi.push({month:m,duty_date:d,slot:s,pos:+i,staff_name:C.bs[k]})}
+const mg={Prefer:'resolution=merge-duplicates'};
+if(up.length)await api('shifts?on_conflict=duty_date,slot,pos',{method:'POST',headers:mg,body:JSON.stringify(up)});
+await Promise.all(dl.map(u=>api(u,{method:'DELETE'})));
+if(lu.length)await api('leave?on_conflict=staff_name,leave_date',{method:'POST',headers:mg,body:JSON.stringify(lu)});
+await Promise.all(ld.map(u=>api(u,{method:'DELETE'})));
+if(bi.length)await api('baselines',{method:'POST',body:JSON.stringify(bi)});
+for(const r of S.req){if(!r.id){const x=await api('swap_requests',{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({kind:r.type,from_name:r.from,to_name:r.to,duty_date:r.date,slot:r.slot,return_date:r.rdate||null,return_slot:r.rslot||null,status:r.st})});r.id=x[0].id}else if(P.rq[r.id]!==r.st)await api('swap_requests?id=eq.'+r.id,{method:'PATCH',body:JSON.stringify({status:r.st})})}
+const nl=S.log.filter(l=>!l.id);if(nl.length){const x=await api('shift_log',{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify(nl.map(l=>({duty_date:l.date,slot:l.slot,from_name:l.from,to_name:l.to,kind:l.type})))});nl.forEach((l,i)=>l.id=x[i].id)}
+C.rq=Object.fromEntries(S.req.filter(r=>r.id).map(r=>[r.id,r.st]));P=C}catch(e){alert('Gagal simpan: '+e.message)}busy=false;if(again){again=false;sync()}}
+const save=()=>{sync()};
+async function poll(){if(busy||$('m').style.display=='flex')return;try{const old=S;S=await load();const a=snp();if(sg(a)!==sg(P)){P=a;nav();R()}else S=old}catch(e){}}
+const $=id=>document.getElementById(id),p2=n=>String(n).padStart(2,'0'),K=(y,m,d)=>`${y}-${p2(m+1)}-${p2(d)}`,ym=(y,m)=>`${y}-${p2(m+1)}`;
+const dt=k=>new Date(k+'T00:00:00'),addD=(k,n)=>{const d=dt(k);d.setDate(d.getDate()+n);return K(d.getFullYear(),d.getMonth(),d.getDate())};
+const isOff=k=>[0,6].includes(dt(k).getDay())||S.ph.includes(k),isAdm=()=>ADM.includes(U);
+const lv=(n,k)=>(S.leave[n]||{})[k],dim=(y,m)=>new Date(y,m+1,0).getDate();
+const slots=k=>isOff(k)?['b','c','d','e','f']:['a','b','c','d','f'];
+const mine=(k,n=U)=>slots(k).filter(s=>s!='f'&&((S.sh[k]||{})[s]||[]).includes(n));
+function bridged(n,k){if(lv(n,k))return true;for(const dr of[-1,1]){let x=k;for(let i=0;i<10;i++){x=addD(x,dr);if(lv(n,x))return true;if(!isOff(x))break}}return false}
+function gen(y,m){const L={},o={};let prev=[];S.staff.forEach(n=>L[n]=0);
+for(let d=1;d<=dim(y,m);d++){const k=K(y,m,d),w=isOff(k),used=new Set(prev),day={},cur=[];
+for(const s of slots(k)){const n=cnt(s,k);day[s]=[];for(let i=0;i<n;i++){const c=S.staff.filter(x=>!used.has(x)&&!lv(x,k)&&!(w&&bridged(x,k))&&(s!='e'||S.tpn.includes(x))).sort((a,b)=>L[a]-L[b]||((S.staff.indexOf(a)+d)%18)-((S.staff.indexOf(b)+d)%18));
+if(c[0]){day[s].push(c[0]);used.add(c[0]);L[c[0]]++;if(s=='d')cur.push(c[0])}}}
+o[k]=day;prev=cur}
+Object.keys(S.sh).filter(k=>k.startsWith(ym(y,m))).forEach(k=>delete S.sh[k]);Object.assign(S.sh,o)}
+const OCT=`Afiq|Salasiah|Syafiq|Maisarah|Azlina
+Syafiq|Fauziah|Asfawi|Mazwan|Syafiq
+Fauziah/Hasidah|Zuraida/Khairul|Mumtazah|Fahmi/Azlina|Norlina
+Maisarah/Azlina|Norlina/Syafiq|Asfawi|Afiq/Mazwan|Asma
+Mazwan|Azlina|Salasiah|Zaharin|Zuraida
+Asma|Khairul|Asma|Fauziah|Mazwan
+Mumtazah|Fahmi|Zaharin|Norlina|Mumtazah
+Afni|Asfawi|Mazwan|Fahmi|Hasidah
+Norlina|Ardiana|Mumtazah|Azlina|Maisarah
+Asfawi/Mazwan|Fahmi/Maisarah|Khairul|Fauziah/Syafiq|Zaharin
+Mumtazah/Azlina|Ardiana/Zaharin|Afiq|Afni/Asfawi|Salasiah
+Syafiq|Zaharin|Fahmi|Salasiah|Khairul
+Mazwan|Zuraida|Azlina|Asma|Fahmi
+Afiq|Fauziah|Afni|Mazwan|Asfawi
+Afni|Asfawi|Zuraida|Syafiq|Afiq
+Asma|Maisarah|Khairul|Ardiana|Afni
+Fauziah/Syafiq|Asma/Mumtazah|Afni|Asfawi/Mazwan|Fahmi
+Salasiah/Hasidah|Zuraida/Afiq|Fahmi|Khairul/Ardiana|Fauziah
+Mumtazah|Asfawi|Fauziah|Syafiq|Azlina
+Norlina|Fahmi|Afiq|Zaharin|Syafiq
+Mazwan|Khairul|Norlina|Afiq|Mumtazah
+Syafiq|Maisarah|Ardiana|Asfawi|Afiq
+Afni|Salasiah|Afni|Norlina|Fahmi
+Afiq/Afni|Ardiana/Zaharin|Azlina|Fauziah/Khairul|Mazwan
+Asfawi/Hasidah|Norlina/Fahmi|Fauziah|Maisarah/Syafiq|Asma
+Afiq|Zuraida|Syafiq|Maisarah|Zuraida
+Mazwan|Ardiana|Asfawi|Afni|Asfawi
+Afni|Fahmi|Asma|Salasiah|Khairul
+Asma|Zaharin|Zuraida|Khairul|Salasiah
+Mumtazah|Azlina|Ardiana|Hasidah|Zaharin
+Zaharin/Salasiah|Asma/Mazwan|Mumtazah|Fahmi/Afni|Maisarah`.split('\n');
+function ensure(){['2026-11-08','2026-11-09','2026-12-25'].forEach(x=>{if(!S.ph.includes(x))S.ph.push(x)});if(!Object.keys(S.sh).some(k=>k.startsWith('2026-10'))){OCT.forEach((r,i)=>{const k=K(2026,9,i+1),f=r.split('|'),d={};slots(k).forEach((x,j)=>d[x]=f[j].split('/'));S.sh[k]=d});S.base['2026-10']=JSON.parse(JSON.stringify(sub('2026-10')));S.pub['2026-10']=1;save()}}
+const sub=p=>Object.fromEntries(Object.entries(S.sh).filter(([k])=>k.startsWith(p)));
+const locked=()=>!isAdm()&&ym(Y,M)>='2026-11';
+function tm(s,i,k){const w=isOff(k),f=dt(k).getDay()==5;
+if(s=='a')return f?[12,15,14,45]:[13,0,14,0];if(s=='b')return w?[i?9:8,0,17,0]:f?[12,15,14,45]:[17,0,19,0];
+if(s=='c')return w&&i==0?[8,0,17,0]:[17,0,22,0];if(s=='d')return[22,0,8,0,1];return[9,0,14,0]}
+function ics(k){const ev=mine(k).map(s=>{const i=S.sh[k][s].indexOf(U),t=tm(s,i,k),z=(kk,h,mi)=>kk.replace(/-/g,'')+'T'+p2(h)+p2(mi)+'00',e=t[4]?addD(k,1):k;
+return`BEGIN:VEVENT\nUID:${k}${s}${U}@roster\nDTSTAMP:20260101T000000Z\nDTSTART:${z(k,t[0],t[1])}\nDTEND:${z(e,t[2],t[3])}\nSUMMARY:Duty ${SN[s]}\nBEGIN:VALARM\nTRIGGER:-PT24H\nACTION:DISPLAY\nDESCRIPTION:Duty esok\nEND:VALARM\nBEGIN:VALARM\nTRIGGER:-PT2H\nACTION:DISPLAY\nDESCRIPTION:Duty 2 jam lagi\nEND:VALARM\nEND:VEVENT`}).join('\n');
+const a=document.createElement('a');a.href='data:text/calendar;charset=utf-8,'+encodeURIComponent('BEGIN:VCALENDAR\nVERSION:2.0\n'+ev+'\nEND:VCALENDAR');a.download='duty-'+k+'.ics';a.click()}
+function M_(h){$('m').innerHTML='<div>'+h+'</div>';$('m').style.display='flex'}const cl=()=>{$('m').style.display='none'};
+$('m').onclick=e=>{if(e.target.id=='m')cl()};
+function nav(){const t=[['roster','Roster'],['swaps','Swaps'],['leave','Leave']];if(isAdm())t.push(['builder','Builder'],['settings','Settings']);
+$('nv').innerHTML=t.map(x=>`<button class="${tab==x[0]?'on':''}" onclick="go('${x[0]}')">${x[1]}</button>`).join('')}
+function go(t){if((t=='builder'||t=='settings')&&!unlocked&&!isAdm())return;
+if((t=='builder'||t=='settings')&&!unlocked){return pin(t)}if(!isAdm()&&(t=='builder'||t=='settings'))t='roster';tab=t;nav();R()}
+function pin(t){M_(`<b>Masukkan PIN 4 digit</b><input id="pi" type="password" inputmode="numeric" maxlength="4" style="width:100%;margin:8px 0"><button class="p" onclick="if($('pi').value==='${PIN}'){unlocked=true;cl();go('${t}')}else $('pi').value=''">OK</button>`)}
+function mnav(){return`<div class="mn"><button onclick="M--;if(M<0){M=11;Y--}sel=null;R()">‹</button><b>${MS[M]} ${Y}</b><button onclick="M++;if(M>11){M=0;Y++}sel=null;R()">›</button></div>`}
+function calG(fn){let h='<div class="cal">'+['A','I','S','R','K','J','S'].map(x=>`<div class="h">${x}</div>`).join('');
+const f=new Date(Y,M,1).getDay();for(let i=0;i<f;i++)h+='<div></div>';
+for(let d=1;d<=dim(Y,M);d++){const k=K(Y,M,d),r=fn(k);h+=`<button class="${isOff(k)?'we ':''}${sel==k?'sel ':''}${r.c||''}" onclick="sel='${k}';R()">${d}${r.dot?'<span class="dot"></span>':''}</button>`}return h+'</div>'}
+function names(k,s,hl,au){const cur=(S.sh[k]||{})[s]||[],b=((S.base[ym(Y,M)]||{})[k]||{})[s]||[];
+return cur.map((n,i)=>{const o=b[i];if(au&&o&&o!=n)return`<span class="n chg"><s>${o}</s> → ${n}</span>`;return`<span class="n"><span class="${hl&&n==U?'hl':''}">${n}</span></span>`}).join('')}
+function table(hl,au,ed,src){const dd=dim(Y,M);
+let h=`<table><tr><th>HB</th><th>HARI</th><th>FPL</th><th>FPD</th><th>FPL</th><th>A &amp; E</th><th>FP / TPN</th><th>**PASIF CALL</th></tr><tr><th></th><th></th>
+<th><small>Isnin-Khamis: L/Call FPL (1) 1.00pm-2.00pm<br>Jumaat: *L/Call FPL (1) 12.15pm-2.45pm</small></th>
+<th><small>Isnin-Khamis: *5.00pm-7.00pm / L/Call FPL (2) 1.00pm-2.00pm<br>Jumaat: *L/Call FPL (2) 12.15pm-2.45pm<br>1 - (8.00am-5.00pm) / 2 - (9.00am-5.00pm)</small></th>
+<th><small>Isnin-Jumaat: *5.00pm-10.00pm<br>Sabtu/Ahad/PH: **8.00am-5.00pm / 5.00pm-10.00pm</small></th>
+<th><small>Isnin-Jumaat: 10.00pm-8.00am<br>Sabtu/Ahad/PH: 10.00pm-8.00am</small></th><th><small>Sabtu/Ahad/PH: 9.00am-2.00pm</small></th><th><small>Isnin-Jumaat/Sabtu/Ahad/PH: **8.00am-8.00am</small></th></tr>`;
+for(let d=1;d<=dd;d++){const k=K(Y,M,d),w=dt(k).getDay();h+=`<tr class="${w==0||w==6?'we':''}"><td>${d}</td><td>${DN[w]}${S.ph.includes(k)?' (PH)':''}</td>`;
+for(const s of['a','b','c','d','e','f'])h+=`<td ${ed?`onclick="edit('${k}')" style="cursor:pointer"`:''}>${names(k,s,hl,au)}</td>`;h+='</tr>'}
+return h+'</table>'}
+function R(){$('ttl').textContent={roster:'Roster',swaps:'Tukar / Lepas Shift',leave:'Cuti',builder:'Builder',settings:'Tetapan'}[tab];({roster:rRoster,swaps:rSwaps,leave:rLeave,builder:rBuilder,settings:rSet})[tab]()}
+function rRoster(){let h=`<div class="seg"><button class="${view=='cal'?'on':''}" onclick="view='cal';R()">Calendar</button><button class="${view=='tbl'?'on':''}" onclick="view='tbl';R()">Jadual Rasmi</button></div>`+mnav();
+if(view=='cal'){h+=`<div class="card">${calG(k=>({dot:mine(k).length}))}<div class="leg"><i></i> My assigned duties</div></div>`;
+if(sel){const ed=!locked();h+=`<div class="card"><b>${DN[dt(sel).getDay()]}, ${sel}</b>${ed?'<div class="tag">Tap satu baris untuk tukar nama</div>':''}`+slots(sel).filter(s=>s!='f').map(s=>{const a=(S.sh[sel]||{})[s]||[];return`<div class="dr" ${ed?`onclick="edit('${sel}','${s}')"`:''}><span>${SN[s]}</span><span>${a.map(n=>`<span class="${n==U?'hl':''}">${n}</span>`).join(' / ')||'-'}</span></div>`}).join('');
+if(mine(sel).length)h+=`<button class="p" style="margin-top:10px;width:100%" onclick="ics('${sel}')">Add to My Calendar</button>`;h+='</div>'}}
+else{h+=`<div class="row"><span class="tag">${locked()?'Dikunci (hanya melalui Swaps)':'Boleh diedit'}</span><button class="p" onclick="prt()">Cetak / Export PDF</button></div>`;
+if(isAdm())h+=`<label class="tag"><input type="checkbox" ${audit?'checked':''} onchange="audit=this.checked;R()"> Bandingkan Roster (Audit View)</label>`;
+h+=`<div class="tw card">${table(true,audit&&isAdm(),!locked())}</div>`;if(audit&&isAdm())h+=auditList()}
+$('v').innerHTML=h}
+function auditList(){const p=ym(Y,M),l=S.log.filter(x=>x.date.startsWith(p));return`<div class="card"><b>Ringkasan Swap / Transfer (${l.length})</b>`+(l.map(x=>`<div class="tag">${x.date} ${SN[x.slot]}: ${x.from} → ${x.to} (${x.type})</div>`).join('')||'<div class="tag">Tiada</div>')+'</div>'}
+function edit(k,only){if(locked())return;M_(`<b>${k}${only?' · '+SN[only]:''}</b>`+slots(k).filter(s=>!only||s==only).map(s=>Array.from({length:cnt(s,k)},(_,i)=>{const c=((S.sh[k]||{})[s]||[])[i]||'';return`<div class="tag">${SN[s]} ${i+1}</div><select data-s="${s}" data-i="${i}"><option value="">-</option>${S.staff.filter(n=>s!='e'||S.tpn.includes(n)).map(n=>`<option value="${n}" ${n==c?'selected':''}>${n}${lv(n,k)?' (cuti)':''}</option>`).join('')}</select>`}).join('')).join('')+`<button class="p" onclick="saveE('${k}')">Simpan</button>`)}
+function saveE(k){const day={};document.querySelectorAll('#m select').forEach(e=>{const s=e.dataset.s;(day[s]=day[s]||[])[+e.dataset.i]=e.value});
+Object.keys(day).forEach(s=>day[s]=day[s].filter(Boolean));const o=S.sh[k]||{};
+Object.keys(day).forEach(s=>{(day[s]).forEach((n,i)=>{const a=(o[s]||[])[i];if(a&&a!=n)S.log.push({date:k,slot:s,from:a,to:n,type:'edit'})})});S.sh[k]=Object.assign({},o,day);save();cl();R()}
+function snap(){const p=ym(Y,M);if(!S.base[p]){S.base[p]=JSON.parse(JSON.stringify(sub(p)));save()}}
+function prt(){const go2=src=>{cl();snap();const p=ym(Y,M);const keep=S.sh,keepB=S.base;
+if(src=='base'&&S.base[p]){S.sh=Object.assign({},keep,S.base[p])}
+$('pa').innerHTML=`<div style="text-align:center;font-weight:700;font-size:10.5pt;line-height:1.35;margin-bottom:4px">JADUAL TUGAS LEBIH MASA PENOLONG PEGAWAI FARMASI<br>JABATAN FARMASI DAN BEKALAN, HEBHK KLUANG<br>${MS[M].toUpperCase()} ${Y}</div>`+table(false,false,false)+`<p style="font-size:8pt;margin:6px 0">Nota: <b>* Tertakluk kepada bilangan kes semasa</b><br>&nbsp;&nbsp;&nbsp;<b>** Pasif Call:</b> Pengganti kepada Pegawai On Call bila berlaku kecemasan-Kemasukan Wad, Kematian Waris Terdekat, MC dan Bencana Alam</p><div class="sig"><div>Disediakan oleh:<hr>HASIDAH BINTI SARJU<br>Pen. Pegawai Farmasi U7<br>Jabatan Farmasi dan Bekalan</div><div>Disahkan oleh:<hr>PN. PERIANAYAGEE MUNIANDY<br>Ketua Pegawai Farmasi U14<br>Jabatan Farmasi dan Bekalan</div></div><div class="leg">FPD : Farmasi Pesakit Dalam<br>FPL : Farmasi Pesakit Luar<br>FP : Farmasi Pengeluaran<br>DIU Unit Maklumat Ubat</div>`;
+S.sh=keep;window.print()};window.pg=go2;
+if(isAdm())M_(`<b>Versi cetakan</b><button onclick="pg('base')">Original Baseline</button><button class="p" onclick="pg('cur')">Current Final (Post-Swaps)</button>`);else go2('cur')}
+function rLeave(){const L=S.leave[U]=S.leave[U]||{};let h=mnav()+`<div class="card">${calG(k=>({c:L[k]?'lv':''}))}<div class="leg">Kuning = cuti (${U})</div></div>`;
+$('v').innerHTML=h;document.querySelectorAll('.cal button').forEach((b,i)=>{b.onclick=()=>{const k=K(Y,M,+b.textContent);sel=k;
+if(L[k])M_(`<b>${k} · ${L[k]}</b><button class="d" onclick="setL('${k}')">Batalkan Cuti / Remove Leave</button><button onclick="cl()">Tutup</button>`);
+else M_(`<b>${k}</b><button class="p" onclick="setL('${k}','AL')">Annual Leave (AL)</button><button onclick="setL('${k}','Course')">Course</button><button onclick="cl()">Batal</button>`)}})}
+function setL(k,t){const L=S.leave[U]=S.leave[U]||{};if(t)L[k]=t;else delete L[k];save();cl();R()}
+function rSwaps(){const inc=S.req.filter(r=>r.to==U&&r.st=='pending');let h=mnav()+`<div class="card">${calG(k=>({dot:mine(k).length}))}</div>`;
+if(inc.length)h+='<b>Permintaan masuk</b>'+inc.map((r,i)=>`<div class="card"><b>${r.type=='swap'?'Swap Request':'Transfer Request'}</b><div class="tag">${r.from} ${r.type=='swap'?'tukar':'lepas'} ${SN[r.slot]} ${r.date}${r.type=='swap'?' dengan duty anda '+r.rdate+' ('+SN[r.rslot]+')':''}</div><div class="row"><button class="p" onclick="acc(${S.req.indexOf(r)})">Accept</button><button class="d" onclick="dec(${S.req.indexOf(r)})">Decline</button></div></div>`).join('');
+if(sel){const m=mine(sel);h+=`<div class="card"><b>${sel}</b>`+(m.map(s=>`<div style="margin-top:8px"><b>${SN[s]}</b><button onclick="swp('${sel}','${s}')">Tukar Shift / Swap</button><button onclick="trf('${sel}','${s}')">Lepas Shift / Transfer Duty</button></div>`).join('')||'<div class="tag">Tiada duty.</div>')+'</div>'}
+$('v').innerHTML=h}
+const ok=(n,k,s)=>!lv(n,k)&&!slots(k).some(x=>((S.sh[k]||{})[x]||[]).includes(n))&&(s!='e'||S.tpn.includes(n)),free=(n,k,s)=>n!=U&&ok(n,k,s);
+function trf(k,s){const c=S.staff.filter(n=>free(n,k,s));M_(`<b>Lepas ${SN[s]} ${k}</b>${c.map(n=>`<button onclick="mk('transfer','${k}','${s}','${n}')">${n}</button>`).join('')||'<div class="tag">Tiada peer layak</div>'}`)}
+const peers=(k,s,d)=>slots(d).filter(x=>x!='f').flatMap(x=>(S.sh[d][x]||[]).filter(n=>n!=U&&ok(U,d,x)&&ok(n,k,s)).map(n=>({n,x})));
+function swp(k,s){const D=Object.keys(S.sh).filter(d=>d.startsWith(ym(Y,M))&&d!=k).sort().filter(d=>peers(k,s,d).length);
+M_(`<b>Tukar ${SN[s]} ${k}</b><div class="tag">1. Pilih tarikh yang anda mahu ganti</div>`+(D.length?`<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">${D.map(d=>`<button onclick="swp2('${k}','${s}','${d}')">${DN[dt(d).getDay()].slice(0,3)} ${+d.slice(8)}/${+d.slice(5,7)}</button>`).join('')}</div>`:'<div class="tag">Tiada tarikh padanan.</div>')+'<button onclick="cl()">Batal</button>')}
+function swp2(k,s,d){M_(`<b>Tukar ${k} ↔ ${d}</b><div class="tag">2. Pilih rakan yang boleh bertugas</div>`+peers(k,s,d).map(p=>`<button class="p" onclick="mk('swap','${k}','${s}','${p.n}','${d}','${p.x}')">${p.n} · ${SN[p.x]}</button>`).join('')+`<button onclick="swp('${k}','${s}')">‹ Kembali</button>`)}
+function mk(type,date,slot,to,rdate,rslot){S.req.push({type,date,slot,from:U,to,rdate,rslot,st:'pending'});save();cl();alert('Permintaan dihantar kepada '+to);R()}
+function rep(k,s,a,b){const arr=S.sh[k][s],i=arr.indexOf(a);if(i>-1)arr[i]=b}
+function acc(i){const r=S.req[i];rep(r.date,r.slot,r.from,r.to);S.log.push({date:r.date,slot:r.slot,from:r.from,to:r.to,type:r.type});
+if(r.type=='swap'){rep(r.rdate,r.rslot,r.to,r.from);S.log.push({date:r.rdate,slot:r.rslot,from:r.to,to:r.from,type:'swap'})}r.st='accepted';save();R()}
+function dec(i){S.req[i].st='declined';save();R()}
+function rBuilder(){$('v').innerHTML=mnav()+`<div class="card"><div class="row"><button onclick="if(confirm('Jana semula roster ${MS[M]}? Cuti bridge akan dikecualikan.')){gen(Y,M);save();R()}">Auto-Generate</button><button class="p" onclick="snap();S.pub[ym(Y,M)]=1;save();alert('Diterbitkan & baseline disimpan');R()">Publish</button></div><div class="tag">${S.pub[ym(Y,M)]?'Diterbitkan':'Draf'} · ${S.base[ym(Y,M)]?'Baseline ada':'Tiada baseline'}</div></div><label class="tag"><input type="checkbox" ${audit?'checked':''} onchange="audit=this.checked;R()"> Bandingkan Roster (Audit View)</label><div class="row"><span></span><button class="p" onclick="prt()">Cetak / Export PDF</button></div><div class="tw card">${table(true,audit,true)}</div>${audit?auditList():''}`}
+function rSet(){$('v').innerHTML='<div class="card"><b>Layak TPN</b><div class="tag">Tandakan staf yang layak FP/TPN (disimpan ke Supabase)</div>'+S.staff.map(n=>`<label class="row" style="margin-top:8px"><span>${n}</span><input type="checkbox" ${S.tpn.includes(n)?'checked':''} onchange="tpnSet('${n}',this.checked)"></label>`).join('')+'</div>'}
+async function tpnSet(n,v){try{await api('staff?name=eq.'+encodeURIComponent(n),{method:'PATCH',body:JSON.stringify({tpn:v})});if(v){if(!S.tpn.includes(n))S.tpn.push(n)}else S.tpn=S.tpn.filter(x=>x!=n)}catch(e){alert(e.message);R()}}
+function init(){ensure();$('usr').innerHTML=S.staff.map(n=>`<option ${n==U?'selected':''}>${n}</option>`).join('');nav();R()}
+function ib(html){try{if(standalone()||localStorage.getItem('inst'))return}catch(e){}if($('ib'))return;const d=document.createElement('div');d.id='ib';d.style.cssText='position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));background:var(--c);border:1px solid var(--p);border-radius:12px;padding:12px;z-index:15;box-shadow:0 4px 16px #0004';d.innerHTML=html+'<button style="margin-top:6px;width:100%" onclick="ibx()">Tutup</button>';document.body.appendChild(d)}
+const standalone=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone;
+function ibx(){try{localStorage.setItem('inst','1')}catch(e){}const d=$('ib');if(d)d.remove()}
+let DP=null;
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();DP=e;ib('<b>Pasang app Roster HEBHK</b><div class="tag">Buka terus dari skrin utama telefon.</div><button class="p" style="width:100%;margin-top:6px" onclick="ins()">Pasang</button>')});
+async function ins(){if(DP){DP.prompt();await DP.userChoice;DP=null}ibx()}
+addEventListener('appinstalled',ibx);
+if(/iphone|ipad|ipod/i.test(navigator.userAgent))setTimeout(()=>ib('<b>Pasang app di iPhone</b><div class="tag">Buka di Safari, tap butang <b>Share</b> (kotak + anak panah), kemudian <b>Add to Home Screen</b>.</div>'),1500);
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
+(async()=>{$('v').innerHTML='<div class="card">Memuatkan data...</div>';try{S=await load();P=snp();try{U=localStorage.getItem('u')||U}catch(e){}if(!S.staff.includes(U))U=S.staff[0];ensure();init();setInterval(poll,15000)}catch(e){$('v').innerHTML='<div class="card">Gagal sambung Supabase: '+e.message+'</div>'}})();
+</script></body></html>
