@@ -47,7 +47,7 @@ html[data-th=c]{--bg:#e8ebef;--c:#f9fafc;--t:#1c2733;--m:#5a6877;--b:#cdd4dc;--p
 .badge.t{background:#fde68a}.badge.a{background:#bfdbfe}
 .scard .row{margin-top:10px}.scard button{min-height:48px;flex:1}
 </style></head><body>
-<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.6.2</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.6.3</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
 <main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="tl"><div id="tr"></div><div id="tp"></div><div id="ta"></div><div id="th">👆</div><div id="tc"></div></div><div id="pa"></div>
 <script>
 const DADM=['Hasidah','Afiq','Khairul','Zaharin'],ADM=DADM.slice(),MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
@@ -695,4 +695,15 @@ const _saveE862=saveE;saveE=function(k){const day={};document.querySelectorAll('
  const W=[];const seen={};Object.keys(day).forEach(t=>day[t].forEach((n,i)=>{if(!n)return;const old=((S.sh[k]||{})[t]||[])[i];if(lv(n,k)&&old!=n)W.push(`${n}: sedang bercuti pada ${fdS(k)}`);(seen[n]=seen[n]||[]).push(SN[t])}));
  Object.keys(seen).forEach(n=>{if(seen[n].length>1)W.push(`${n}: dua slot pada hari yang sama (${seen[n].join(', ')})`)});
  if(W.length&&!confirm('AMARAN (bukan sekatan):\n- '+W.join('\n- ')+'\n\nTeruskan simpan?'))return;_saveE862(k)};
+
+/* ===== v8.6.3: Swap langkah 2 dan Request keluar SEMUA nama (kelabu + sebab jika tak boleh) ===== */
+function partnerList(k,s,d){const swp=k!=null,fd=x=>x.split('-').reverse().join('/');const out=[];const sh=(dd,x)=>((S.sh||{})[dd]||{})[x]||[];
+ S.staff.filter(n=>n!=U&&S.act?.[n]!==false&&!(S.last&&S.last[n]&&d>S.last[n])).forEach(n=>{
+  const held=slots(d).filter(x=>x!='f'&&sh(d,x).includes(n)&&(!swp||d!=k||x!=s||sh(d,x).filter(Boolean).length>1));let any=false,why='';
+  held.forEach(x=>{const good=swp?(d==k?ok(U,d,x,s)&&ok(n,k,s,x):ok(U,d,x)&&ok(n,k,s)):ok(U,d,x);
+   if(good){any=true;out.push({n,x,on:true})}else if(!why){why=(!(swp?(d==k?ok(U,d,x,s):ok(U,d,x)):ok(U,d,x)))?(x=='e'&&!S.tpn.includes(U)?'anda tiada sijil TPN':'anda sudah ada slot itu'):(s=='e'&&!S.tpn.includes(n)?'tiada sijil TPN':'sudah ada slot itu pada '+fd(k))}});
+  if(!any)out.push({n,on:false,why:why||'tiada tugas '+fd(d)})});
+ return out}
+swp2=function(k,s,d){PICK=k;try{M_(`<b>Swap ${k} ↔ ${d}</b><div class="tag">Step 2: choose a colleague. Semua nama dipaparkan; yang kelabu tidak boleh dipilih (sebab ditulis).</div>`+partnerList(k,s,d).map(p=>p.on?`<button class="p" onclick="mk('swap','${k}','${s}','${p.n}','${d}','${p.x}')">${p.n} · ${SN[p.x]}${(((S.sh[d]||{})[p.x]||[]).filter(Boolean).length>1)?' '+(S.sh[d][p.x].indexOf(p.n)+1):''} · ${tt(p.x,S.sh[d][p.x].indexOf(p.n),d)}</button>`:`<button class="p" disabled style="opacity:.6">${p.n} · ${p.why}</button>`).join('')+`<button onclick="swp('${k}','${s}')">‹ Back</button>`)}finally{PICK=null}};
+rqPick=function(d){PICK=d;try{M_(`<b>Request ${fdS(d)}</b><div class="tag">Langkah 2: pilih duty dan nama. Semua nama dipaparkan; yang kelabu tidak boleh dipilih (sebab ditulis).</div>`+partnerList(null,null,d).map(p=>{if(!p.on)return `<button class="p" disabled style="opacity:.6">${p.n} · ${p.why}</button>`;const a=S.sh[d][p.x];return`<button class="p" onclick="mk('take','${d}','${p.x}','${p.n}')">${p.n} · ${SN[p.x]}${a.filter(Boolean).length>1?' '+(a.indexOf(p.n)+1):''} · ${tt(p.x,a.indexOf(p.n),d)}</button>`}).join('')+`<button onclick="rqStart()">‹ Back</button>`)}finally{PICK=null}};
 </script></body></html>
