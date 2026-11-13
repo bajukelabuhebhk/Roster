@@ -33,7 +33,7 @@ button,select,input{font-size:17px}
 #nv button{min-height:52px;font-size:16px}
 #m button,#m select{min-height:52px;margin:10px 0}
 #m button.nm{text-align:left;padding:10px 14px;background:var(--c);color:var(--t);border:2px solid var(--b);border-left:12px solid #9ca3af;border-radius:12px;font-weight:600}
-#m button.av-free{border-left-color:#0072B2}#m button.av-sl{border-left-color:#CC79A7}#m button.av-sb{border-left-color:#E69F00}#m button.av-kerja{border-left-color:#111;background:#e3e7ea}#m button.av-cuti{border-left-color:#9aa5ad;border-left-style:dashed;opacity:.85}.sym{float:right;font-size:20px;font-weight:700}
+#m button.av-free{border-left-color:#0072B2}#m button.av-sl{border-left-color:#CC79A7}#m button.av-sb{border-left-color:#E69F00}#m button.av-kerja{border-left-color:var(--t);background:var(--we);color:var(--t)}#m button.av-cuti{border-left-color:#9aa5ad;border-left-style:dashed;opacity:.85}.sym{float:right;font-size:20px;font-weight:700}
 .grp{display:flex;align-items:center;gap:8px;margin:14px 0 2px;font-weight:700;font-size:15px;color:var(--t)}.grp i{width:14px;height:14px;border-radius:4px;display:inline-block}.mini{font-weight:400;font-size:13px;color:var(--m)}
 .mpub{display:flex;gap:8px;align-items:stretch;margin-bottom:12px}.mpub .arr{flex:0 0 64px;font-size:34px;line-height:1;border-radius:14px;background:var(--c);border:2px solid var(--b);color:var(--t);padding:0}.mpub .mcen{flex:1;margin:0;text-align:center;padding:14px 10px}.mpub .mcen b{font-size:22px;display:block;margin-bottom:10px}.mpub .mcen button{width:100%;min-height:52px}.mpub .mcen .tag{margin-top:8px;font-size:14px}
 html[data-th=d]{--bg:#eef1f3;--c:#fbfcfd;--t:#15232b;--m:#43545f;--b:#8696a2;--p:#1f5a73;--g:#2b7a8c;--we:#dfe5e9}
@@ -48,7 +48,7 @@ html[data-th=c]{--bg:#e8ebef;--c:#f9fafc;--t:#1c2733;--m:#5a6877;--b:#cdd4dc;--p
 .scard .row{margin-top:10px}.scard button{min-height:48px;flex:1}
 .lvr{display:flex;gap:10px;padding:11px 0;border-top:1px solid var(--b)}.lvr.we{background:var(--we);margin:0 -14px;padding:11px 14px}.lvd{width:66px;flex:none}.lvd b{font-size:20px;display:block}.lvd span{font-size:13px;color:var(--m)}.lvn{flex:1}.lvc{font-weight:700;margin-bottom:5px}.lvp{display:inline-flex;align-items:center;gap:5px;border:1.5px solid var(--m);border-radius:999px;padding:3px 10px;margin:0 6px 6px 0;font-size:15px;background:#fff}.lvp i{font-style:normal;font-size:13px}.phb{display:inline-block;background:var(--t);color:#fff;border-radius:6px;padding:1px 7px;font-size:12px;margin-left:6px;font-weight:400}
 </style></head><body>
-<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.3</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.4</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
 <main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="tl"><div id="tr"></div><div id="tp"></div><div id="ta"></div><div id="th">👆</div><div id="tc"></div></div><div id="pa"></div>
 <script>
 const DADM=['Hasidah','Afiq','Khairul','Zaharin'],ADM=DADM.slice(),MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
