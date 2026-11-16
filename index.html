@@ -79,8 +79,14 @@ html[data-th=c]{--bg:#e8ebef;--c:#f9fafc;--t:#1c2733;--m:#5a6877;--b:#cdd4dc;--p
 .lvkey{display:inline-block;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid rgba(0,0,0,.2)}
 .lvnm{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:700;line-height:1.2;padding:1px 2px;border-radius:4px;background:var(--we);color:var(--t)}
 .lvp.lv,.lvp.lvk,.lvp.lvm{border-color:rgba(0,0,0,.25)}
+</style><style id="v886d">
+.cal{grid-template-columns:repeat(7,minmax(0,1fr))}
+.cal button{min-width:0;overflow:hidden}
+.cal .lbs{min-width:0;max-width:100%}
+.lvnm{width:100%;box-sizing:border-box;}
+@media(max-width:480px){.lvnm{font-size:9.5px;padding:1px 1px;letter-spacing:-.2px}}
 </style></head><body>
-<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6c</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6d</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
 <main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="tl"><div id="tr"></div><div id="tp"></div><div id="ta"></div><div id="th">👆</div><div id="tc"></div></div><div id="pa"></div>
 <script>
 const DADM=['Hasidah','Afiq','Khairul','Zaharin'],ADM=DADM.slice(),MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
