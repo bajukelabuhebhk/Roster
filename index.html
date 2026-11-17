@@ -86,7 +86,7 @@ html[data-th=c]{--bg:#e8ebef;--c:#f9fafc;--t:#1c2733;--m:#5a6877;--b:#cdd4dc;--p
 .lvnm{width:100%;box-sizing:border-box;}
 @media(max-width:480px){.lvnm{font-size:9.5px;padding:1px 1px;letter-spacing:-.2px}}
 </style></head><body>
-<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6d</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6e</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
 <main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="tl"><div id="tr"></div><div id="tp"></div><div id="ta"></div><div id="th">👆</div><div id="tc"></div></div><div id="pa"></div>
 <script>
 const DADM=['Hasidah','Afiq','Khairul','Zaharin'],ADM=DADM.slice(),MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
@@ -132,7 +132,7 @@ async function poll(){if(!LOG||busy||$('m').style.display=='flex')return;try{con
 const $=id=>document.getElementById(id),p2=n=>String(n).padStart(2,'0'),K=(y,m,d)=>`${y}-${p2(m+1)}-${p2(d)}`,ym=(y,m)=>`${y}-${p2(m+1)}`;
 const dt=k=>new Date(k+'T00:00:00'),addD=(k,n)=>{const d=dt(k);d.setDate(d.getDate()+n);return K(d.getFullYear(),d.getMonth(),d.getDate())};
 const isOff=k=>[0,6].includes(dt(k).getDay())||S.ph.includes(k),isAdm=()=>ADM.includes(U);
-const lv=(n,k)=>(S.leave[n]||{})[k],dim=(y,m)=>new Date(y,m+1,0).getDate();
+const lv=(n,k)=>{const t=(S.leave[n]||{})[k];return t=='MC'?undefined:t},dim=(y,m)=>new Date(y,m+1,0).getDate();
 const slots=k=>isOff(k)?['b','c','d','e','f']:['a','b','c','d','f'];
 const mine=(k,n=U)=>slots(k).filter(s=>s!='f'&&((S.sh[k]||{})[s]||[]).includes(n));
 function bridged(n,k){if(lv(n,k))return true;for(const dr of[-1,1]){let x=k;for(let i=0;i<10;i++){x=addD(x,dr);if(lv(n,x))return true;if(!isOff(x))break}}return false}
