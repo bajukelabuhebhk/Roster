@@ -85,8 +85,14 @@ html[data-th=c]{--bg:#e8ebef;--c:#f9fafc;--t:#1c2733;--m:#5a6877;--b:#cdd4dc;--p
 .cal .lbs{min-width:0;max-width:100%}
 .lvnm{width:100%;box-sizing:border-box;}
 @media(max-width:480px){.lvnm{font-size:9.5px;padding:1px 1px;letter-spacing:-.2px}}
+</style><style id="v886g">
+html.e2e body{padding-top:var(--e2t);padding-bottom:calc(70px + var(--e2b))}
+html.e2e header{top:var(--e2t)}
+html.e2e body::before{content:"";position:fixed;left:0;right:0;top:0;height:var(--e2t);background:#0f766e;z-index:7}
+html.e2e nav{padding-bottom:var(--e2b)}
+@media print{html.e2e body{padding:0}html.e2e body::before{display:none}}
 </style></head><body>
-<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6f</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
+<header><b id="ttl">Roster Farmasi</b><span id="ver" class="tag" style="margin:0 6px">v8.8.6g</span><select id="usr" onchange="U=this.value;try{localStorage.setItem('u',U)}catch(e){};go(tab)"></select></header>
 <main id="v"></main><nav id="nv"></nav><div id="m"></div><div id="tl"><div id="tr"></div><div id="tp"></div><div id="ta"></div><div id="th">👆</div><div id="tc"></div></div><div id="pa"></div>
 <script>
 const DADM=['Hasidah','Afiq','Khairul','Zaharin'],ADM=DADM.slice(),MS=['Januari','Februari','Mac','April','Mei','Jun','Julai','Ogos','September','Oktober','November','Disember'],DN=['Ahad','Isnin','Selasa','Rabu','Khamis','Jumaat','Sabtu'];
@@ -786,4 +792,16 @@ function partnerList(k,s,d){const swp=k!=null,fd=x=>x.split('-').reverse().join(
  return out}
 swp2=function(k,s,d){PICK=k;try{M_(`<b>Swap ${k} ↔ ${d}</b><div class="tag">Step 2: choose a colleague. Semua nama dipaparkan; yang kelabu tidak boleh dipilih (sebab ditulis).</div>`+partnerList(k,s,d).map(p=>p.on?`<button class="p" onclick="mk('swap','${k}','${s}','${p.n}','${d}','${p.x}')">${p.n} · ${SN[p.x]}${(((S.sh[d]||{})[p.x]||[]).filter(Boolean).length>1)?' '+(S.sh[d][p.x].indexOf(p.n)+1):''} · ${tt(p.x,S.sh[d][p.x].indexOf(p.n),d)}</button>`:`<button class="p" disabled style="opacity:.6">${p.n} · ${p.why}</button>`).join('')+`<button onclick="swp('${k}','${s}')">‹ Back</button>`)}finally{PICK=null}};
 rqPick=function(d){PICK=d;try{M_(`<b>Request ${fdS(d)}</b><div class="tag">Langkah 2: pilih duty dan nama. Semua nama dipaparkan; yang kelabu tidak boleh dipilih (sebab ditulis).</div>`+partnerList(null,null,d).map(p=>{if(!p.on)return `<button class="p" disabled style="opacity:.6">${p.n} · ${p.why}</button>`;const a=S.sh[d][p.x];return`<button class="p" onclick="mk('take','${d}','${p.x}','${p.n}')">${p.n} · ${SN[p.x]}${a.filter(Boolean).length>1?' '+(a.indexOf(p.n)+1):''} · ${tt(p.x,a.indexOf(p.n),d)}</button>`}).join('')+`<button onclick="rqStart()">‹ Back</button>`)}finally{PICK=null}};
+</script><script id="v886g">
+(function(){var de=document.documentElement,pb=document.createElement('div');
+pb.style.cssText='position:fixed;left:0;top:0;width:0;visibility:hidden;pointer-events:none;height:env(safe-area-inset-bottom,0px);padding-top:env(safe-area-inset-top,0px)';
+function chk(){try{if(!pb.parentNode)document.body.appendChild(pb);
+ var sa=matchMedia('(display-mode: standalone)').matches||matchMedia('(display-mode: fullscreen)').matches||navigator.standalone;
+ var env=pb.offsetHeight,po=innerHeight>=innerWidth,a=screen.width,b=screen.height,sh=po?Math.max(a,b):Math.min(a,b);
+ var gap=sh-innerHeight,on=!!sa&&env==0&&gap<=8;
+ de.classList.toggle('e2e',on);if(on){de.style.setProperty('--e2t','32px');de.style.setProperty('--e2b',po?'48px':'0px')}
+ window.__e2e={sa:!!sa,env:env,ih:innerHeight,sh:sh,gap:gap,on:on}}catch(e){}}
+chk();addEventListener('resize',chk);addEventListener('orientationchange',function(){setTimeout(chk,300)});
+var v=document.getElementById('ver');if(v)v.addEventListener('dblclick',function(){var x=window.__e2e||{};v.textContent='v8.8.6g '+(x.on?'E':'N')+' '+x.ih+'/'+x.sh+' s'+(x.sa?1:0)+' i'+x.env;setTimeout(function(){v.textContent='v8.8.6g'},6000)});
+})();
 </script></body></html>
